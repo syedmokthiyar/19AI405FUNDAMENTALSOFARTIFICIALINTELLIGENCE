@@ -1,6 +1,6 @@
 <h1>ExpNo 3 : Implement A* search algorithm for a Graph</h1> 
-<h3>Name: Saravanan N</h3>
-<h3>Register Number/Staff Id: TSML006</h3>
+<h3>Name: S.M.SYED MOKTHIYAR</h3>
+<h3>Register Number: 21222220156</h3>
 <H3>Aim:</H3>
 <p>To ImplementA * Search algorithm for a Graph using Python 3.</p>
 <H3>Algorithm:</H3>
@@ -224,3 +224,4 @@ Path found: ['A', 'E', 'D', 'G']
 ![FA3](https://github.com/syedmokthiyar/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118787294/2ae0d6ba-68f6-4dc8-b053-536c1c4fc904)
 
 ## RESULT
+Thus,a Graph was constructed and implementation of A* Search Algorithm for the same graph was done successfully.
