@@ -71,6 +71,33 @@ Begin<br>
       return true<br>
    return false<br>
 End<br>
+
+### PROGRAM
+```
+from itertools import permutations
+def solve_cryptarithmetic():
+    for perm in permutations(range(10), 8):
+        S, E, N, D, M, O, R, Y = perm
+        # Check for leading zeros
+        if S == 0 or M == 0:
+            continue
+        # Check the equation constraints
+        SEND = 1000 * S + 100 * E + 10 * N + D
+        MORE = 1000 * M + 100 * O + 10 * R + E
+        MONEY = 10000 * M + 1000 * O + 100 * N + 10 * E + Y
+        if SEND + MORE == MONEY:
+            return SEND, MORE, MONEY
+    return None
+solution = solve_cryptarithmetic()
+if solution:
+    SEND, MORE, MONEY = solution
+    print(f'SEND = {SEND}')
+    print(f'MORE = {MORE}')
+    print(f'MONEY = {MONEY}')
+else:
+    print("No solution found.")
+```
+
 <hr>
 <h2>Sample Input and Output:</h2>
 SEND = 9567<br>
@@ -78,5 +105,11 @@ MORE = 1085<br>
 <hr>
 MONEY = 10652<br>
 <hr>
+
+### OUTPUT
+
+![Screenshot 2023-11-02 135504](https://github.com/natsaravanan/19AI405FUNDAMENTALSOFARTIFICIALINTELLIGENCE/assets/118787294/4e4a0cb1-b950-418e-8f7e-f3fd8dc690d0)
+
+
 <h2>Result:</h2>
 <p> Thus a Cryptarithmetic Problem was solved using Python successfully</p>
